@@ -6,7 +6,8 @@ const Links = () => {
 
 
     const addOrEditLink = async (linkObject) => {
-        await db.collection('links').doc().set(linkObject)
+        await db.collection('links').doc().set(linkObject);
+        
         console.log('new link added')
     };
 
