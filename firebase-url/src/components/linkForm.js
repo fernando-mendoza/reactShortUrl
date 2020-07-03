@@ -13,12 +13,12 @@ const LinkForm = (props) => {
         //console.log(e.target.value)
         const {name, value} = e.target;
         setValues({...values, [name]: value})
-        props.addOrEdit();
     };
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(values)
+        props.addOrEditLink(values);
+        //console.log(values)
     }
     return (
         <form className="card card-body" onSubmit={handleSubmit}>
