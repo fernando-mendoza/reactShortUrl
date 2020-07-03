@@ -1,7 +1,15 @@
 import React from 'react';
+import LinkForm from "./linkForm";
 
 const Links = () => {
-    return <h1>Links</h1>
+    const addUrl = () => {
+        console.log('new url')
+    };
+
+    return <div>
+
+    <LinkForm addOrEdit={addUrl}/>
+    </div>
 };
 
 export default Links;
